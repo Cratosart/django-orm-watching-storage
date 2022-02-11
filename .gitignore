@@ -1,0 +1,8 @@
+.env/
+.vscode/
+.replit/
+/.idea
+Pipfile*/
+Pipfile.lock/
+poetry.lock/
+Pipfile*
