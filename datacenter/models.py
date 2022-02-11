@@ -37,7 +37,6 @@ def get_duration(visit):
     now = localtime().replace(microsecond=0)
     entered_at = localtime(visit.entered_at)
     leaved_at = localtime(visit.leaved_at)
-    leaved_at = localtime(visit.leaved_at) if leaved_at else now
     duration = leaved_at - entered_at
     return duration.total_seconds()
 
