@@ -6,3 +6,6 @@ Pipfile*/
 Pipfile.lock/
 poetry.lock/
 Pipfile*
+pyproject*
+.replit
+poetry*
