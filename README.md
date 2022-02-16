@@ -4,19 +4,26 @@
 Кто находится в хранилище.
 Подозрительно долгое время проведённое в хранилище.
 
+Для запуска нужна следующая команда:
+```
+python manage.py runserver 127.0.0.1:8000
+
+```
+
 ### Как установить
 
 Python3 должен быть уже установлен.
 
-Требуется провести настройку приложения для запуска в файле settings.py расположенного в дерриктории ./project требуется добавить следующие данные
+Требуется провести настройку приложения для запуска в файле .env расположенного в дерриктории проекта требуется добавить следующие данные
 
 ```
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': 'checkpoint.devman.org',
-        'PORT': '5434',
-        'NAME': 'checkpoint',
-        'USER': 'guard',
-        'PASSWORD': 'osim5',
+    ENGINE=django.db.backends.postgresql_psycopg2
+    HOST=checkpoint.devman.org
+    PORT=5434
+    NAME=checkpoint
+    USER=guard
+    PASSWORD=osim5
+    DEBUG=1
 ```
 
 Затем воспользуйтесь 'pip' для установки зависимостей.
