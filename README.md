@@ -17,13 +17,10 @@ Python3 должен быть уже установлен.
 Требуется провести настройку приложения для запуска в файле .env расположенного в дерриктории проекта требуется добавить следующие данные
 
 ```
-    ENGINE=django.db.backends.postgresql_psycopg2
-    HOST=checkpoint.devman.org
-    PORT=5434
-    NAME=checkpoint
-    USER=guard
-    PASSWORD=osim5
-    DEBUG=1
+DB_URL=postgres://login:password@host:port/name
+SECRET_KEY=REPLACE_ME
+ALLOWED_HOSTS=['localhost', '127.0.0.1']
+DEBUG=False
 ```
 
 Затем воспользуйтесь 'pip' для установки зависимостей.
