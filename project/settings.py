@@ -1,6 +1,10 @@
 import os
 from dotenv import load_dotenv
+from environs import Env
 import dj_database_url
+
+env = Env()
+env.read_env()
 
 load_dotenv()
 
@@ -14,7 +18,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() in ('true', '1', 't')
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
